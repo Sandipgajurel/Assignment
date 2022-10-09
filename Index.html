@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <!-- external css file importing -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- importing bootstrap css and javascript -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://img.icons8.com/ios-filled/100/000000/fidget-spinner--v1.png"
+            alt=""
+            width="40"
+            height="32"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Service Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button type="button" class="btn danger">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- All the content of the body including footer are inside this div -->
+    <div class="content1">
+      <!-- bootstrap grid -->
+      <div class="row">
+        <div class="col-xs-7 col-sm-8 col-lg-6">
+          <h2 class="firstHeading">providing Industry Leading Solutions for</h2>
+
+          <p class="paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type.
+          </p>
+          <button class="button">
+            Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="col-xs-5 col-sm-4 col-lg-6">
+          <!-- this div is the parent of div containing image and half circle -->
+          <div id="wrapper">
+            <div class="content">
+              <img
+                class="image"
+                src="https://www.mango-solutions.com/wp-content/uploads/2021/10/data-leader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="background">
+              <div class="myCircle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- second row of the content -->
+      <div class="row second">
+        <div class="about-left col-xs-5 col-sm-4 col-lg-3">
+          <h2 class="about-company">About Company</h2>
+        </div>
+        <div class="about-right col-xs-7 col-sm-8 col-lg-9">
+          <p class="second-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+
+      <h1 class="our-services">Our services</h1>
+      <!-- row third below our services -->
+      <div class="row third">
+        <div class="left3 col-xs-7 col-sm-6 col-lg-5">
+          <h4 class="heading3">Non-It enterprises</h4>
+          <p class="text3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="button3">
+            Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="right3 col-xs-8 col-sm-6 col-lg-7">
+          <div class="content3">
+            <img
+              class="image3"
+              src="https://www.mango-solutions.com/wp-content/uploads/2021/10/data-leader.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- row 4 -->
+      <div class="row four">
+        <div class="right4 col-xs-8 col-sm-6 col-lg-7">
+          <div class="content4">
+            <img
+              class="image4"
+              src="https://www.mango-solutions.com/wp-content/uploads/2021/10/data-leader.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="left4 col-xs-7 col-sm-6 col-lg-5">
+          <h4 class="heading4">Software product companies</h4>
+          <p class="text4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="button4">
+            Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- row 5 same style as row 3 to so that same css has been applied so that class name are same. -->
+      <div class="row third">
+        <div class="left3 col-xs-7 col-sm-6 col-lg-5">
+          <h4 class="heading3">Non-It enterprises</h4>
+          <p class="text3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="button3">
+            Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="right3 col-xs-8 col-sm-6 col-lg-7">
+          <div class="content3">
+            <img
+              class="image3"
+              src="https://www.mango-solutions.com/wp-content/uploads/2021/10/data-leader.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- services  -->
+      <div class="service">
+        <h1 class="service-map">Service Map</h1>
+
+        <!-- first box inside services -->
+        <div class="row service-div">
+          <div class="service-left col-xs-5 col-sm-4 col-lg-5">
+            <h2 class="service-type">It consulting</h2>
+          </div>
+          <div class="service-right col-xs-7 col-sm-8 col-lg-7">
+            <p class="service-text">
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+              <li>
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </li>
+
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+            </p>
+          </div>
+        </div>
+
+        <!-- second box inside services -->
+        <div class="row service-div">
+          <div class="service-left col-xs-5 col-sm-5 col-lg-5">
+            <h2 class="service-type">Software Development</h2>
+          </div>
+          <div class="service-right col-xs-7 col-sm-7 col-lg-7">
+            <p class="service-text">
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+              <li>
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </li>
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+            </p>
+          </div>
+        </div>
+
+        <!-- third box inside services -->
+        <div class="row service-div">
+          <div class="service-left col-xs-5 col-sm-4 col-lg-5">
+            <h2 class="service-type">Testing And QA</h2>
+          </div>
+          <div class="service-right col-xs-7 col-sm-8 col-lg-7">
+            <p class="service-text">
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+              <li>
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </li>
+
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </li>
+            </p>
+          </div>
+        </div>
+
+        <h4 class="view-services">View All Services</h4>
+      </div>
+
+      <div class="contact">
+        <h3 class="heading">Contact Us</h3>
+
+        <div class="first-circle-left"></div>
+        <div class="second-circle-left"></div>
+
+        <div class="first-circle-right"></div>
+        <div class="second-circle-right"></div>
+
+        <!-- form component inside contact section. -->
+        <div class="input">
+          <form class="form">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroup"
+                    placeholder="Full Name"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroup"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroup"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Have anything to say?"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer component -->
+      <div class="footer">
+        <span class="left-text">Company Name</span>
+        <span class="center-text">Company,2022 © All Rights Reserved</span>
+      </div>
+    </div>
+  </body>
+</html>

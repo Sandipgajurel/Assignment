@@ -1,0 +1,397 @@
+.navbar {
+  padding: 20px 15px 20px 15px;
+}
+.navbar .btn {
+  border: 2px solid rgb(203, 78, 112);
+  background-color: white;
+  color: rgb(12, 10, 10);
+  padding: 7px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 35px;
+  margin-right: 30px;
+}
+.navbar .navbar-nav {
+  margin-left: 150px;
+}
+.navbar .nav-item {
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.content1 {
+  margin: 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.content1 .row {
+  padding: 0px 30px 50px 30px;
+  position: relative;
+}
+.content1 .row .firstHeading {
+  background: #121FCF;
+  background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content1 .row .paragraph {
+  margin-top: 25px;
+  color: rgb(12, 10, 10);
+}
+.content1 .row .button {
+  margin-top: 25px;
+  background: rgb(93, 90, 162);
+  background: linear-gradient(90deg, rgb(93, 90, 162) 4%, rgb(13, 24, 101) 73%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+}
+.content1 .row #wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.content1 .row .content {
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 100;
+}
+.content1 .row .content .image {
+  width: 95%;
+  float: right;
+}
+.content1 .row .background {
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.content1 .row .background .myCircle {
+  box-sizing: border-box;
+  width: 170px;
+  height: 210px;
+  border: 60px solid #c5ccfa;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: 0;
+  margin-top: 30px;
+  margin-left: -55px;
+  transform: rotate(15deg);
+  opacity: 0.5;
+}
+.content1 .second {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 220px 0px;
+  padding: 20px 35px 20px 20px;
+  background-color: #d3e6ed;
+  border-radius: 135px;
+  height: auto;
+}
+.content1 .second .about-left {
+  border-top-left-radius: 130px;
+  border-bottom-left-radius: 130px;
+  height: 220px;
+  padding: 70px 30px 30px 30px;
+  background-color: white;
+  border-right: 3px solid #84bccf;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1916ab;
+  position: relative;
+}
+.content1 .second .about-left .about-company {
+  position: absolute;
+  top: 35%;
+  left: 17%;
+}
+.content1 .second .about-right {
+  background-color: #d3e6ed;
+  height: 220px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  padding: 30px;
+  position: relative;
+}
+.content1 .second .about-right .second-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+}
+.content1 .our-services {
+  margin-top: -170px;
+  text-align: center;
+  font-weight: bold;
+  color: #121FCF;
+}
+.content1 .third {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px 5px;
+  margin-bottom: 40px;
+  padding: 20px 20px 20px 20px;
+  background-color: #F2D4D7;
+  border-top-right-radius: 180px;
+  border-bottom-right-radius: 180px;
+  height: auto;
+}
+.content1 .third .left3 {
+  height: 300px;
+  padding: 10px 20px 30px 10px;
+  position: relative;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
+.content1 .third .left3 :nth-child(1) {
+  color: #121FCF;
+  font-weight: bold;
+  padding: 10px 10px;
+  float: left;
+}
+.content1 .third .left3 :nth-child(2) {
+  text-align: start;
+  padding: 10px 20px 10px 10px;
+}
+.content1 .third .left3 :nth-child(3) {
+  background: rgb(93, 90, 162);
+  background: linear-gradient(90deg, rgb(93, 90, 162) 4%, rgb(13, 24, 101) 73%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+  float: left;
+  width: 170px;
+  margin-bottom: 0px;
+}
+.content1 .third .right3 {
+  height: 320px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  padding: 10px;
+  position: relative;
+  display: inline;
+  padding-bottom: 20px;
+}
+.content1 .third .right3 :first-child {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: 60%;
+  top: 0%;
+  right: 5%;
+  padding: 10px;
+}
+.content1 .four {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px 5px;
+  margin-bottom: 40px;
+  padding: 40px 20px 40px 35px;
+  background-color: #c7e6fd;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  height: auto;
+}
+.content1 .four .left4 {
+  height: 340px;
+  padding: 10px 0px 30px 0px;
+  position: relative;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
+.content1 .four .left4 :nth-child(1) {
+  color: #121FCF;
+  font-weight: bold;
+  padding: 10px 10px;
+  float: left;
+}
+.content1 .four .left4 :nth-child(2) {
+  text-align: start;
+  padding: 10px 20px 10px 10px;
+}
+.content1 .four .left4 :nth-child(3) {
+  background: rgb(93, 90, 162);
+  background: linear-gradient(90deg, rgb(93, 90, 162) 4%, rgb(13, 24, 101) 73%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+  float: left;
+  width: 170px;
+}
+.content1 .four .right4 {
+  height: 320px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  padding: 10px;
+  position: relative;
+  display: inline;
+  padding-bottom: 20px;
+}
+.content1 .four .right4 :first-child {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: 60%;
+  top: 0%;
+  right: 2%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.content1 .service {
+  margin: 10px 15px 10px 15px;
+  height: auto;
+}
+.content1 .service .service-map {
+  text-align: center;
+  font-weight: bold;
+  color: #121FCF;
+  margin-bottom: 25px;
+}
+.content1 .service .service-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 40px 30px 30px 20px;
+  background-color: #f9f9f9;
+  height: auto;
+  margin-bottom: 25px;
+}
+.content1 .service .service-div .service-left {
+  height: 220px;
+  padding: 70px 30px 30px 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1916ab;
+  position: relative;
+}
+.content1 .service .service-div .service-left .service-type {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.content1 .service .service-div .service-right {
+  height: 220px;
+  padding: 30px;
+  position: relative;
+  height: auto;
+}
+.content1 .service .service-div .service-right .service-text {
+  position: absolute;
+  top: auto;
+  left: 10%;
+  right: 10%;
+}
+.content1 .service .view-services {
+  color: #121FCF;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.content1 .contact {
+  height: auto;
+  background-color: #d3e6ed;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.content1 .contact .heading {
+  color: #1916ab;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.content1 .contact .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 40px 0px 40px;
+}
+.content1 .contact .input .form {
+  width: 700px;
+}
+.content1 .contact .input .form .form-control {
+  margin: 5px;
+}
+.content1 .contact .input .form .btn {
+  width: 150px;
+}
+.content1 .contact .first-circle-left {
+  position: absolute;
+  z-index: 0.5;
+  width: 100px;
+  height: 100px;
+  background: #ADD8E6;
+  opacity: 0.7;
+  border-radius: 50%;
+  float: left;
+  margin-left: -10px;
+  top: 10%;
+}
+.content1 .contact .second-circle-left {
+  position: absolute;
+  z-index: 0.5;
+  width: 50px;
+  height: 50px;
+  background: #ADD8E6;
+  opacity: 0.7;
+  border-radius: 50%;
+  float: left;
+  margin-left: -20px;
+  top: 30%;
+  left: 10%;
+}
+.content1 .contact .first-circle-right {
+  position: absolute;
+  z-index: 0.5;
+  width: 100px;
+  height: 100px;
+  background: #ADD8E6;
+  opacity: 0.7;
+  border-radius: 50%;
+  margin-left: -10px;
+  top: 70%;
+  right: 5%;
+}
+.content1 .contact .second-circle-right {
+  position: absolute;
+  z-index: 0.5;
+  width: 50px;
+  height: 50px;
+  background: #ADD8E6;
+  opacity: 0.7;
+  border-radius: 50%;
+  float: left;
+  margin-left: -20px;
+  top: 60%;
+  right: 12%;
+}
+.content1 .footer {
+  background-color: black;
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+}
+.content1 .footer .left-text {
+  float: left;
+  color: white;
+}
+.content1 .footer .center-text {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

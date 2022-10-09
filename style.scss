@@ -1,0 +1,494 @@
+// variable declaration 
+$base-color: white;
+$margin-top: 25px;
+$textColor: rgb(12, 10, 10);
+$light-blue: #c5ccfa;
+
+//style for nav bar and its child classes.
+.navbar {
+  padding: 20px 15px 20px 15px;
+
+  //sign-in button inside navbar 
+  .btn {
+    border: 2px solid rgb(203, 78, 112);
+    background-color: $base-color;
+    color: $textColor;
+    padding: 7px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 35px;
+    margin-right: 30px;
+  }
+
+  .navbar-nav {
+    margin-left: 150px;
+  }
+
+  //items inside nav bar
+  .nav-item {
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+// css for body and its child component
+.content1 {
+  margin: 15px 15px;
+  display: flex;
+  flex-direction: column;
+
+  //styles for first div inside content1 class.
+  .row {
+    padding: 0px 30px 50px 30px;
+    position: relative;
+
+    .firstHeading {
+      background: #121FCF;
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .paragraph {
+      margin-top: $margin-top;
+      color: $textColor;
+    }
+
+    .button {
+      margin-top: $margin-top;
+      background: rgb(93, 90, 162);
+      background: linear-gradient(90deg, rgba(93, 90, 162, 1) 4%, rgba(13, 24, 101, 1) 73%);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px 10px 20px;
+    }
+
+    //parent div for image and half circle
+    #wrapper {
+      position: relative;
+      width: 100%;
+      height: auto;
+
+    }
+
+    .content {
+      color: #FFFFFF;
+      position: absolute;
+      z-index: 100;
+
+      .image {
+        width: 95%;
+        float: right;
+      }
+    }
+
+    //giving position to half circle
+    .background {
+      color: #999999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+
+      //half circle with visibility less than normal content.
+      .myCircle {
+        box-sizing: border-box;
+        width: 170px;
+        height: 210px;
+        border: 60px solid $light-blue;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-right: 0;
+        margin-top: 30px;
+        margin-left: -55px;
+        transform: rotate(15deg);
+        opacity: 0.5;
+      }
+    }
+  }
+
+  //second box of the content
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 220px 0px;
+    padding: 20px 35px 20px 20px;
+    background-color: #d3e6ed;
+    border-radius: 135px;
+    height: auto;
+
+    //div inside second box containing text "about company"
+    .about-left {
+      border-top-left-radius: 130px;
+      border-bottom-left-radius: 130px;
+      height: 220px;
+      padding: 70px 30px 30px 30px;
+      background-color: white;
+      border-right: 3px solid #84bccf;
+
+      // font-style
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #1916ab;
+      position: relative;
+
+      //for text position
+      .about-company {
+        position: absolute;
+        top: 35%;
+        left: 17%;
+      }
+    }
+
+    .about-right {
+      background-color: #d3e6ed;
+      height: 220px;
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+      padding: 30px;
+      position: relative;
+
+      //position of the text inside div
+      .second-text {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        right: 10%;
+      }
+    }
+
+  }
+
+  .our-services {
+    margin-top: -170px;
+    text-align: center;
+    font-weight: bold;
+    color: #121FCF;
+
+  }
+
+  .third {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 5px;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 20px;
+    background-color: #F2D4D7;
+    border-top-right-radius: 180px;
+    border-bottom-right-radius: 180px;
+    height: auto;
+
+    //div inside second box containing text
+    .left3 {
+      height: 300px;
+      padding: 10px 20px 30px 10px;
+      position: relative;
+      display: flex;
+      flex: wrap;
+      flex-direction: column;
+
+      //uses of pseudo classes
+      //  for heading
+      :nth-child(1) {
+        color: #121FCF;
+        font-weight: bold;
+        padding: 10px 10px;
+        float: left;
+      }
+
+      //for text position
+      :nth-child(2) {
+        text-align: start;
+        padding: 10px 20px 10px 10px;
+      }
+
+      //uses of pseudo classes for button
+      :nth-child(3) {
+        background: rgb(93, 90, 162);
+        background: linear-gradient(90deg, rgba(93, 90, 162, 1) 4%, rgba(13, 24, 101, 1) 73%);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px 10px 20px;
+        float: left;
+        width: 170px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .right3 {
+      height: 320px;
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+      padding: 10px;
+      position: relative;
+      display: inline;
+      padding-bottom: 20px;
+
+      // applying pseudo class to the first child of right3 class image3.
+      :first-child {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        bottom: 60%;
+        top: 0%;
+        right: 5%;
+        padding: 10px;
+        // margin-bottom: 15px;
+      }
+    }
+
+
+  }
+
+
+  .four {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 5px;
+    margin-bottom: 40px;
+    padding: 40px 20px 40px 35px;
+    background-color: #c7e6fd;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    height: auto;
+
+    //div inside second box containing text
+    .left4 {
+      height: 340px;
+      padding: 10px 0px 30px 0px;
+      position: relative;
+      display: flex;
+      flex: wrap;
+      flex-direction: column;
+
+      // appliying style to the first child (heading) of left4 class (pseudo-classes)
+      :nth-child(1) {
+        color: #121FCF;
+        font-weight: bold;
+        padding: 10px 10px;
+        float: left;
+      }
+
+      // appliying style to the second child (text) of left4 class (pseudo-classes)
+      :nth-child(2) {
+        text-align: start;
+        padding: 10px 20px 10px 10px;
+      }
+
+      // appliying style to the third child of left4 class (pseudo-classes)
+      :nth-child(3) {
+        background: rgb(93, 90, 162);
+        background: linear-gradient(90deg, rgba(93, 90, 162, 1) 4%, rgba(13, 24, 101, 1) 73%);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px 10px 20px;
+        float: left;
+        width: 170px;
+      }
+    }
+
+    .right4 {
+      height: 320px;
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+      padding: 10px;
+      position: relative;
+      display: inline;
+      padding-bottom: 20px;
+
+      // applying pseudo class to the first child (image4) of right4 class.
+      :first-child {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        bottom: 60%;
+        top: 0%;
+        right: 2%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    }
+
+  }
+
+
+  .service {
+    margin: 10px 15px 10px 15px;
+    height: auto;
+
+    .service-map {
+      text-align: center;
+      font-weight: bold;
+      color: #121FCF;
+      margin-bottom: 25px;
+    }
+
+    .service-div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 40px 30px 30px 20px;
+      background-color: #f9f9f9;
+      height: auto;
+      margin-bottom: 25px;
+
+      .service-left {
+        height: 220px;
+        padding: 70px 30px 30px 30px;
+        // font-style
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #1916ab;
+        position: relative;
+
+        //for text position
+        .service-type {
+          position: absolute;
+          top: 40%;
+          left: 20%;
+        }
+      }
+
+      .service-right {
+        height: 220px;
+        padding: 30px;
+        position: relative;
+        height: auto;
+
+        //position of the text inside div
+        .service-text {
+          position: absolute;
+          top: auto;
+          left: 10%;
+          right: 10%;
+        }
+      }
+
+    }
+
+    .view-services {
+      color: #121FCF;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+    }
+  }
+
+  .contact {
+    height: auto;
+    background-color: #d3e6ed;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+
+    .heading {
+      color: #1916ab;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0px 40px 0px 40px;
+
+      .form {
+        width: 700px;
+
+        .form-control {
+          margin: 5px;
+        }
+
+        .btn {
+          width: 150px;
+        }
+      }
+    }
+
+    position: relative;
+
+    .first-circle-left {
+      position: absolute;
+      z-index: 0.5;
+      width: 100px;
+      height: 100px;
+      background: #ADD8E6;
+      opacity: 0.7;
+      border-radius: 50%;
+      float: left;
+      margin-left: -10px;
+      top: 10%;
+    }
+
+    .second-circle-left {
+      position: absolute;
+      z-index: 0.5;
+      width: 50px;
+      height: 50px;
+      background: #ADD8E6;
+      opacity: 0.7;
+      border-radius: 50%;
+      float: left;
+      margin-left: -20px;
+      top: 30%;
+      left: 10%;
+    }
+
+
+    .first-circle-right {
+      position: absolute;
+      z-index: 0.5;
+      width: 100px;
+      height: 100px;
+      background: #ADD8E6;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin-left: -10px;
+      top: 70%;
+      right: 5%;
+    }
+
+    .second-circle-right {
+      position: absolute;
+      z-index: 0.5;
+      width: 50px;
+      height: 50px;
+      background: #ADD8E6;
+      opacity: 0.7;
+      border-radius: 50%;
+      float: left;
+      margin-left: -20px;
+      top: 60%;
+      right: 12%;
+    }
+  }
+
+  .footer {
+    background-color: black;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+
+    .left-text {
+      float: left;
+      color: white;
+    }
+
+    .center-text {
+      color: white;
+    }
+  }
+}
